@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="first">
+        <div class="formBox">
+            <div class="buttonBox">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn"onclick="login()"> LOGIN</button>
+                <button type="button" class="toggle-btn"onclick="register()"> REGISTER</button>
+            </div>
+            <form action="/login"class="input-group" id="login" method="POST">
+                <input type="email" class="input-field" placeholder="Email" name="email"required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="password"required>
+                <input type="checkBox" class="check-Box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">LOGIN</button>
+            </form>
+            
+           
+            
+        </div>
+    </div
+    ><script>
+          var z=document.getElementById("btn");
+          function register(){
+              z.style.left="110px";
+          }
+          function login(){
+              z.style.left="0";
+          }
+    </script>
+   
+</body>
+</html>
